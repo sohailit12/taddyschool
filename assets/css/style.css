@@ -543,7 +543,7 @@ section {
 .breadcrumbs {
   margin-top: 73px;
   text-align: center;
-  background: #5fcf80;
+  /* background: #5fcf80; */
   padding: 30px 0;
   color: #fff;
 }
@@ -1589,4 +1589,30 @@ section {
   background: #3ac162;
   color: #fff;
   text-decoration: none;
+}
+.breadcrumbs {
+  position: relative;
+  text-align: center; /* Center align text */
+}
+
+.container {
+  position: relative; /* Make the container relative */
+}
+
+.container img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text-overlay {
+  position: absolute; /* Position overlay absolutely */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center */
+  color: white; /* Change text color for better visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for readability */
+  z-index: 1; /* Ensure text is above the image */
+}
+.ourcourse{
+  text-align: center;
 }
